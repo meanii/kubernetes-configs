@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment 
 metadata:
   name: nginx-deployment
@@ -11,7 +11,7 @@ spec:
       app: nginx
   template:
     metadata:
-      lables:
+      labels:
         app: nginx 
     spec:
       containers:
